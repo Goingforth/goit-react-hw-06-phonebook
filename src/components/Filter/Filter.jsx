@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { TitleFind, FieldFind } from './Filter.styled';
-import { updateFilter } from 'redux/actions';
+import { updateFilter } from 'redux/filterSlice';
 
 const Filter = () => {
   const dispatch = useDispatch();

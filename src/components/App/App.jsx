@@ -10,10 +10,7 @@ const App = () => {
       <ContactForm />
       <h2>Contacts </h2>
       <Filter />
-      <ContactList
-      // contacts={filteredContacts()}
-      // onDeleteContact={deleteContact}
-      />
+      <ContactList />
     </Container>
   );
 };
