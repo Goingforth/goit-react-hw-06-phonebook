@@ -4,9 +4,9 @@ import { List, Message } from './List.styled';
 import ContactItem from 'components/ContactItem/ContactItem';
 
 const ContactList = () => {
-  const contacts = useSelector(state => state.contacts.contacts);
+  const contacts = useSelector(state => state.data.contacts);
 
-  const filter = useSelector(state => state.filter.filter);
+  const filter = useSelector(state => state.sorting.filter);
 
   const filteredContacts = () => {
     return contacts.filter(el =>

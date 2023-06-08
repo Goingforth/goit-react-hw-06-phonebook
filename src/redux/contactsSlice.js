@@ -16,7 +16,6 @@ const contactsSlice = createSlice({
       reducer(state, action) {
         const contactsName = state.contacts.map(el => el.name);
         const name = action.payload.name;
-        // const number = action.payload.number;
         contactsName.includes(name)
           ? alert(`${name} is already in contacts`)
           : state.contacts.push(action.payload);
